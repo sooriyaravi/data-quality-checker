@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "table": "bronze.CRM_prd_info",
+    "total_rows": 397,
+    "columns": [
+      "prd_id",
+      "prd_key",
+      "prd_nm",
+      "prd_cost",
+      "prd_line",
+      "prd_start_dt",
+      "prd_end_dt"
+    ],
+    "col_types": {
+      "prd_id": "int",
+      "prd_key": "nvarchar",
+      "prd_nm": "nvarchar",
+      "prd_cost": "int",
+      "prd_line": "nvarchar",
+      "prd_start_dt": "datetime",
+      "prd_end_dt": "datetime"
+    },
+    "scanned_at": "2026-03-11T11:17:48"
+  },
+  "nulls": {
+    "prd_id": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "prd_key": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "prd_nm": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "prd_cost": {
+      "null_count": 2,
+      "null_pct": 0.5,
+      "status": "FAIL"
+    },
+    "prd_line": {
+      "null_count": 17,
+      "null_pct": 4.3,
+      "status": "FAIL"
+    },
+    "prd_start_dt": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "prd_end_dt": {
+      "null_count": 197,
+      "null_pct": 49.6,
+      "status": "FAIL"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {},
+  "outliers": {
+    "prd_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_prd_info.prd_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "prd_cost": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_prd_info.prd_cost' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    }
+  },
+  "trim": {
+    "prd_key": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "prd_nm": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "prd_line": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 397,
+    "columns_with_nulls": 3,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 3,
+    "quality_score": 89,
+    "grade": "GOOD",
+    "silver_layer_ready": true
+  }
+}

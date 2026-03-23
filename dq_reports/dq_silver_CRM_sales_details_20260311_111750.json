@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "table": "silver.CRM_sales_details",
+    "total_rows": 0,
+    "columns": [
+      "sls_ord_num",
+      "sls_prd_key",
+      "sls_cust_id",
+      "sls_order_dt",
+      "sls_ship_dt",
+      "sls_due_dt",
+      "sls_sales",
+      "sls_quantity",
+      "sls_price",
+      "dwh_create_date"
+    ],
+    "col_types": {
+      "sls_ord_num": "nvarchar",
+      "sls_prd_key": "nvarchar",
+      "sls_cust_id": "int",
+      "sls_order_dt": "date",
+      "sls_ship_dt": "date",
+      "sls_due_dt": "date",
+      "sls_sales": "int",
+      "sls_quantity": "int",
+      "sls_price": "int",
+      "dwh_create_date": "datetime2"
+    },
+    "scanned_at": "2026-03-11T11:17:50"
+  },
+  "nulls": {
+    "sls_ord_num": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_prd_key": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_cust_id": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_order_dt": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_ship_dt": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_due_dt": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_sales": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_quantity": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "sls_price": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "dwh_create_date": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {
+    "dwh_create_date": {
+      "format_type": "date",
+      "total_non_null": 0,
+      "invalid_count": 0,
+      "invalid_pct": 0,
+      "invalid_samples": [],
+      "status": "PASS"
+    }
+  },
+  "outliers": {
+    "sls_cust_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_sales_details.sls_cust_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_sales": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_sales_details.sls_sales' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_quantity": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_sales_details.sls_quantity' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_price": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_sales_details.sls_price' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    }
+  },
+  "trim": {
+    "sls_ord_num": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "sls_prd_key": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 0,
+    "columns_with_nulls": 0,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 0,
+    "quality_score": 100,
+    "grade": "EXCELLENT",
+    "silver_layer_ready": true
+  }
+}

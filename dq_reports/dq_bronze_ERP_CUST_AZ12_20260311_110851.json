@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "table": "bronze.ERP_CUST_AZ12",
+    "total_rows": 18483,
+    "columns": [
+      "cid",
+      "bdate",
+      "gen"
+    ],
+    "col_types": {
+      "cid": "nvarchar",
+      "bdate": "date",
+      "gen": "nvarchar"
+    },
+    "scanned_at": "2026-03-11T11:08:51"
+  },
+  "nulls": {
+    "cid": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "bdate": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "gen": {
+      "null_count": 1471,
+      "null_pct": 8.0,
+      "status": "FAIL"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {
+    "bdate": {
+      "format_type": "date",
+      "total_non_null": 18483,
+      "invalid_count": 0,
+      "invalid_pct": 0.0,
+      "invalid_samples": [],
+      "status": "PASS"
+    }
+  },
+  "outliers": {},
+  "trim": {
+    "cid": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "gen": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 18483,
+    "columns_with_nulls": 1,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 1,
+    "quality_score": 92,
+    "grade": "EXCELLENT",
+    "silver_layer_ready": true
+  }
+}

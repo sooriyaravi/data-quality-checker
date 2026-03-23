@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "table": "silver.CRM_prd_info",
+    "total_rows": 0,
+    "columns": [
+      "prd_id",
+      "cat_id",
+      "prd_key",
+      "prd_nm",
+      "prd_cost",
+      "prd_line",
+      "prd_start_dt",
+      "prd_end_dt",
+      "dwh_create_date"
+    ],
+    "col_types": {
+      "prd_id": "int",
+      "cat_id": "nvarchar",
+      "prd_key": "nvarchar",
+      "prd_nm": "nvarchar",
+      "prd_cost": "int",
+      "prd_line": "nvarchar",
+      "prd_start_dt": "date",
+      "prd_end_dt": "date",
+      "dwh_create_date": "datetime2"
+    },
+    "scanned_at": "2026-03-11T11:09:50"
+  },
+  "nulls": {
+    "prd_id": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cat_id": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "prd_key": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "prd_nm": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "prd_cost": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "prd_line": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "prd_start_dt": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "prd_end_dt": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "dwh_create_date": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {
+    "dwh_create_date": {
+      "format_type": "date",
+      "total_non_null": 0,
+      "invalid_count": 0,
+      "invalid_pct": 0,
+      "invalid_samples": [],
+      "status": "PASS"
+    }
+  },
+  "outliers": {
+    "prd_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_prd_info.prd_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "prd_cost": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_prd_info.prd_cost' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    }
+  },
+  "trim": {
+    "cat_id": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "prd_key": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "prd_nm": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "prd_line": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 0,
+    "columns_with_nulls": 0,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 0,
+    "quality_score": 100,
+    "grade": "EXCELLENT",
+    "silver_layer_ready": true
+  }
+}

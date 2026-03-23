@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "table": "bronze.ERP_LOC_A101",
+    "total_rows": 18484,
+    "columns": [
+      "cid",
+      "cntry"
+    ],
+    "col_types": {
+      "cid": "nvarchar",
+      "cntry": "nvarchar"
+    },
+    "scanned_at": "2026-03-11T11:17:49"
+  },
+  "nulls": {
+    "cid": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "cntry": {
+      "null_count": 332,
+      "null_pct": 1.8,
+      "status": "FAIL"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {},
+  "outliers": {},
+  "trim": {
+    "cid": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cntry": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 18484,
+    "columns_with_nulls": 1,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 1,
+    "quality_score": 88,
+    "grade": "GOOD",
+    "silver_layer_ready": true
+  }
+}

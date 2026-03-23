@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "table": "bronze.CRM_sales_detail",
+    "total_rows": 60398,
+    "columns": [
+      "sls_order_num",
+      "sls_prd_key",
+      "sls_cust_id",
+      "sls_order_id",
+      "sls_ship_id",
+      "sls_due_dt",
+      "sls_sales",
+      "sls_quantity",
+      "sls_price"
+    ],
+    "col_types": {
+      "sls_order_num": "nvarchar",
+      "sls_prd_key": "nvarchar",
+      "sls_cust_id": "int",
+      "sls_order_id": "int",
+      "sls_ship_id": "int",
+      "sls_due_dt": "date",
+      "sls_sales": "int",
+      "sls_quantity": "int",
+      "sls_price": "int"
+    },
+    "scanned_at": "2026-03-11T11:08:50"
+  },
+  "nulls": {
+    "sls_order_num": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_prd_key": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_cust_id": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_order_id": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_ship_id": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_due_dt": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_sales": {
+      "null_count": 8,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    },
+    "sls_quantity": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "sls_price": {
+      "null_count": 7,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {},
+  "outliers": {
+    "sls_cust_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_sales_detail.sls_cust_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_order_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_sales_detail.sls_order_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_ship_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_sales_detail.sls_ship_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_sales": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_sales_detail.sls_sales' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_quantity": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_sales_detail.sls_quantity' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    },
+    "sls_price": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_sales_detail.sls_price' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    }
+  },
+  "trim": {
+    "sls_order_num": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "sls_prd_key": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 60398,
+    "columns_with_nulls": 2,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 2,
+    "quality_score": 94,
+    "grade": "EXCELLENT",
+    "silver_layer_ready": true
+  }
+}

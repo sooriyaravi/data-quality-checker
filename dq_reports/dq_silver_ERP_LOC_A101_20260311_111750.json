@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "table": "silver.ERP_LOC_A101",
+    "total_rows": 0,
+    "columns": [
+      "cid",
+      "cntry",
+      "dwh_create_date"
+    ],
+    "col_types": {
+      "cid": "nvarchar",
+      "cntry": "nvarchar",
+      "dwh_create_date": "datetime2"
+    },
+    "scanned_at": "2026-03-11T11:17:50"
+  },
+  "nulls": {
+    "cid": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cntry": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "dwh_create_date": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {
+    "dwh_create_date": {
+      "format_type": "date",
+      "total_non_null": 0,
+      "invalid_count": 0,
+      "invalid_pct": 0,
+      "invalid_samples": [],
+      "status": "PASS"
+    }
+  },
+  "outliers": {},
+  "trim": {
+    "cid": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cntry": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 0,
+    "columns_with_nulls": 0,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 0,
+    "quality_score": 100,
+    "grade": "EXCELLENT",
+    "silver_layer_ready": true
+  }
+}

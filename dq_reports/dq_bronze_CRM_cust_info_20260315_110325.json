@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "table": "bronze.CRM_cust_info",
+    "total_rows": 18493,
+    "columns": [
+      "cst_id",
+      "cst_key",
+      "cst_firstname",
+      "cst_lastname",
+      "cst_marital_status",
+      "cst_gndr",
+      "cst_create_date"
+    ],
+    "col_types": {
+      "cst_id": "int",
+      "cst_key": "nvarchar",
+      "cst_firstname": "nvarchar",
+      "cst_lastname": "nvarchar",
+      "cst_marital_status": "nvarchar",
+      "cst_gndr": "nvarchar",
+      "cst_create_date": "date"
+    },
+    "scanned_at": "2026-03-15T11:03:24"
+  },
+  "nulls": {
+    "cst_id": {
+      "null_count": 3,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    },
+    "cst_key": {
+      "null_count": 0,
+      "null_pct": 0.0,
+      "status": "PASS"
+    },
+    "cst_firstname": {
+      "null_count": 7,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    },
+    "cst_lastname": {
+      "null_count": 6,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    },
+    "cst_marital_status": {
+      "null_count": 6,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    },
+    "cst_gndr": {
+      "null_count": 4577,
+      "null_pct": 24.7,
+      "status": "FAIL"
+    },
+    "cst_create_date": {
+      "null_count": 3,
+      "null_pct": 0.0,
+      "status": "FAIL"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {
+    "cst_create_date": {
+      "format_type": "date",
+      "total_non_null": 18490,
+      "invalid_count": 0,
+      "invalid_pct": 0.0,
+      "invalid_samples": [],
+      "status": "PASS"
+    }
+  },
+  "outliers": {
+    "cst_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'bronze.CRM_cust_info.cst_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    }
+  },
+  "trim": {
+    "cst_key": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cst_firstname": {
+      "trim_count": 15,
+      "sample_values": [
+        " Jon",
+        " Elizabeth",
+        "  Lauren",
+        " Ian ",
+        "  Chloe"
+      ],
+      "status": "FAIL"
+    },
+    "cst_lastname": {
+      "trim_count": 17,
+      "sample_values": [
+        " Torres",
+        "  Zhu",
+        " Walker",
+        " Jenkins ",
+        " Murphy  "
+      ],
+      "status": "FAIL"
+    },
+    "cst_marital_status": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cst_gndr": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 18493,
+    "columns_with_nulls": 6,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 2,
+    "total_issues": 8,
+    "quality_score": 71,
+    "grade": "NEEDS WORK",
+    "silver_layer_ready": false
+  }
+}

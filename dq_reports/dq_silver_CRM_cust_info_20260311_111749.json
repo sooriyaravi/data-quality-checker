@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "table": "silver.CRM_cust_info",
+    "total_rows": 0,
+    "columns": [
+      "cst_id",
+      "cst_key",
+      "cst_firstname",
+      "cst_lastname",
+      "cst_marital_status",
+      "cst_gndr",
+      "cst_create_date",
+      "dwh_create_date"
+    ],
+    "col_types": {
+      "cst_id": "int",
+      "cst_key": "nvarchar",
+      "cst_firstname": "nvarchar",
+      "cst_lastname": "nvarchar",
+      "cst_marital_status": "nvarchar",
+      "cst_gndr": "nvarchar",
+      "cst_create_date": "date",
+      "dwh_create_date": "datetime2"
+    },
+    "scanned_at": "2026-03-11T11:17:49"
+  },
+  "nulls": {
+    "cst_id": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cst_key": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cst_firstname": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cst_lastname": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cst_marital_status": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cst_gndr": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "cst_create_date": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    },
+    "dwh_create_date": {
+      "null_count": 0,
+      "null_pct": 0,
+      "status": "PASS"
+    }
+  },
+  "duplicates": {
+    "duplicate_groups": 0,
+    "affected_rows": 0,
+    "status": "PASS",
+    "sample_duplicates": []
+  },
+  "formats": {
+    "cst_create_date": {
+      "format_type": "date",
+      "total_non_null": 0,
+      "invalid_count": 0,
+      "invalid_pct": 0,
+      "invalid_samples": [],
+      "status": "PASS"
+    },
+    "dwh_create_date": {
+      "format_type": "date",
+      "total_non_null": 0,
+      "invalid_count": 0,
+      "invalid_pct": 0,
+      "invalid_samples": [],
+      "status": "PASS"
+    }
+  },
+  "outliers": {
+    "cst_id": {
+      "error": "('42000', \"[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Column 'silver.CRM_cust_info.cst_id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause. (8120) (SQLExecDirectW)\")",
+      "status": "ERROR"
+    }
+  },
+  "trim": {
+    "cst_key": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cst_firstname": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cst_lastname": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cst_marital_status": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    },
+    "cst_gndr": {
+      "trim_count": 0,
+      "sample_values": [],
+      "status": "PASS"
+    }
+  },
+  "summary": {
+    "total_rows": 0,
+    "columns_with_nulls": 0,
+    "duplicate_groups": 0,
+    "columns_bad_format": 0,
+    "columns_with_outliers": 0,
+    "columns_with_trim": 0,
+    "total_issues": 0,
+    "quality_score": 100,
+    "grade": "EXCELLENT",
+    "silver_layer_ready": true
+  }
+}
